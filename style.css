@@ -33,11 +33,11 @@ body {
 /* --------------- Rating card styles -----------------*/
 
 .rating-card {
-  margin-top: 19.5rem;
-  border-radius: 3rem;
   width: 100%;
   max-width: 41.2rem;
+  margin-top: 19.5rem;
   padding: 3.2rem 3.9rem 3.2rem 3.2rem;
+  border-radius: 3rem;
   background: radial-gradient(
     98.96% 98.96% at 50% 0%,
     #232a34 0%,
@@ -49,86 +49,91 @@ body {
 .rating-card__point {
   width: 4.8rem;
   height: 4.8rem;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
   background-color: var(--dark-blue);
 }
 
 .rating-card__title {
-  color: var(--white);
-  margin-top: 3rem;
-  font-weight: 700;
   font-size: 2.8rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  color: var(--white);
 }
 
 .rating-card__text {
-  margin-top: 1.5rem;
   line-height: 2.4rem;
+  margin-top: 1.5rem;
 }
 
 .rating-card__points {
-  margin-top: 2.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 2.4rem;
 }
 
 .rating-card__point {
-  width: 5.1rem;
-  height: 5.1rem;
   font-size: 1.6rem;
   font-weight: 700;
+  width: 5.1rem;
+  height: 5.1rem;
 }
 
 .rating-card__point:hover {
+  cursor: pointer;
   background-color: var(--orange);
   color: var(--white);
   transition: 0.2s;
 }
 
 .rating-card__point.active {
-  background-color: var(--light-grey);
   color: var(--white);
+  background-color: var(--light-grey);
 }
 
 .rating-card__btn {
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
   text-align: center;
-  margin-top: 3.2rem;
+  text-transform: uppercase;
   width: 100%;
+  margin-top: 3.2rem;
   padding: 1.27rem 0 1.27rem 0;
   border-radius: 2.25rem;
   border: none;
   background-color: var(--orange);
-  text-transform: uppercase;
   color: var(--white);
-  letter-spacing: 0.2rem;
-  font-family: inherit;
-  font-size: 1.5rem;
-  font-weight: 700;
 }
 
 .rating-card__btn:hover {
+  cursor: pointer;
   background-color: var(--white);
   color: var(--orange);
   transition: 0.2s;
 }
 
-.rating-card {
+/* Added with JS to hide the first card */
+.hide {
   display: none;
+  transition: 0.5s;
 }
 
 /* --------------- Thank you card styles -----------------*/
 .thankyou-card {
+  width: 100%;
+  max-width: 41.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4.5rem 3.9rem 4.5rem 3.2rem;
+  justify-content: center;
   margin-top: 19.5rem;
+  padding: 4.5rem 3.9rem 4.5rem 3.2rem;
   border-radius: 3rem;
-  width: 100%;
-  max-width: 41.2rem;
   background: radial-gradient(
     98.96% 98.96% at 50% 0%,
     #232a34 0%,
@@ -137,13 +142,13 @@ body {
 }
 
 .thankyou-card__points {
-  margin-top: 3.2rem;
-  width: 19.3rem;
-  border-radius: 2.25rem;
-  background-color: var(--dark-blue);
   text-align: center;
+  width: 19.3rem;
+  margin-top: 3.2rem;
   padding: 0.4rem 0 0.4rem 0;
+  border-radius: 2.25rem;
   color: var(--orange);
+  background-color: var(--dark-blue);
 }
 
 .thankyou-card__points--text {
@@ -151,21 +156,21 @@ body {
 }
 
 .thankyou-card__title {
-  color: var(--white);
-  margin-top: 3.2rem;
-  font-weight: 700;
   font-size: 2.8rem;
+  font-weight: 700;
+  margin-top: 3.2rem;
+  color: var(--white);
 }
 
 .thankyou-card__text {
-  margin-top: 1.5rem;
-  line-height: 2.4rem;
   text-align: center;
+  line-height: 2.4rem;
+  margin-top: 1.5rem;
 }
 
-/* .thankyou-card {
+.thankyou-card {
   display: none;
-} */
+}
 
 @media only screen and (max-width: 450px) {
   body {
@@ -174,10 +179,10 @@ body {
 
   /* ---------- Rating card styles ---------- */
   .rating-card {
-    margin-top: 0;
-    border-radius: 1.5rem;
     max-width: 32.7rem;
+    margin-top: 0;
     padding: 2.4rem 2.4rem 3.2rem 2.4rem;
+    border-radius: 1.5rem;
   }
 
   .rating-card__img--container {
@@ -186,35 +191,35 @@ body {
   }
 
   .rating-card__title {
-    margin-top: 1.6rem;
-    font-weight: 700;
     font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: 1.6rem;
   }
 
   .rating-card__text {
-    margin-top: 1.7rem;
-    line-height: 2.2rem;
     font-size: 1.4rem;
+    line-height: 2.2rem;
+    margin-top: 1.7rem;
   }
 
   .rating-card__point {
+    font-size: 1.4rem;
     width: 4.2rem;
     height: 4.2rem;
-    font-size: 1.4rem;
   }
 
   .rating-card__btn {
-    margin-top: 2.4rem;
-    letter-spacing: 0.2rem;
     font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    margin-top: 2.4rem;
   }
 
   /* ---------- Thank you card styles ---------- */
 
   .thankyou-card {
+    max-width: 32.7rem;
     padding: 3.4rem 2.4rem 3.7rem 2.4rem;
     border-radius: 1.5rem;
-    max-width: 32.7rem;
   }
 
   .thankyou-card__img {
@@ -222,8 +227,8 @@ body {
   }
 
   .thankyou-card__points {
-    margin-top: 2.4rem;
     width: 16.8rem;
+    margin-top: 2.4rem;
     padding: 0.5rem 0 0.5rem 0;
   }
 
@@ -233,13 +238,13 @@ body {
   }
 
   .thankyou-card__title {
-    margin-top: 2.4rem;
     font-size: 2.4rem;
+    margin-top: 2.4rem;
   }
 
   .thankyou-card__text {
-    margin-top: 1.7rem;
-    line-height: 2.2rem;
     font-size: 1.4rem;
+    line-height: 2.2rem;
+    margin-top: 1.7rem;
   }
 }
